@@ -2,15 +2,15 @@
 Basic Leaflet Ionic 3
 
 1. install
-    npm install leaflet --save
+        npm install leaflet --save
 2. command CSS Leaflet
-    cp -a node_modules/leaflet/dist/images www/assets/
-    cp node_modules/leaflet/dist/leaflet.css www/assets/
+cp -a node_modules/leaflet/dist/images www/assets/
+cp node_modules/leaflet/dist/leaflet.css www/assets/
 3. Import css in /www/index.html and src/index.html
-    <link href="build/main.css" rel="stylesheet"> 
-    <link href="assets/leaflet.css" rel="stylesheet"> 
+            <link href="build/main.css" rel="stylesheet"> 
+            <link href="assets/leaflet.css" rel="stylesheet"> 
 4. In ionic page example map.ts
-    import * as Leaflet from 'leaflet';
+            import * as Leaflet from 'leaflet';
 5. Use this code in map.ts
 
 import { Component } from '@angular/core';
@@ -73,21 +73,21 @@ estado: any;
 }
 6. in html page example map.html use
 
-<ion-content [attr.noScroll]="shouldScroll">
-<div id="map"></div>
-</ion-content>
+        <ion-content [attr.noScroll]="shouldScroll">
+        <div id="map"></div>
+        </ion-content>
 
 7. in scss example map.scss use
-page-map {
-  [noScroll] {
-    overflow: hidden;
-  }
+        page-map {
+          [noScroll] {
+            overflow: hidden;
+          }
 
-  #map {
-    height: 100%;
-    width: 100%;
-  }
-}
+          #map {
+            height: 100%;
+            width: 100%;
+          }
+        }
 
 
 
