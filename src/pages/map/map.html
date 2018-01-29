@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Mapa</ion-title>
+  </ion-navbar>
+  <ion-row responsive-sm>
+    <ion-col>
+      <button ion-button color="dark" (click)="MostrarLatLon()">Ver LAT-LON</button>
+    </ion-col>
+</ion-row>
+</ion-header>
+
+<ion-content [attr.noScroll]="shouldScroll">
+    <div id="map"></div>
+</ion-content>
