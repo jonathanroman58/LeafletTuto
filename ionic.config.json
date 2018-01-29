@@ -1,0 +1,8 @@
+{
+  "name": "leafletTuto",
+  "app_id": "386a982e",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
